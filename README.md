@@ -16,6 +16,10 @@ A comprehensive simulation environment for the Unitree G1 humanoid robot using M
 
 ## 🎥 Video Demo
 [![Watch the video](https://img.youtube.com/vi/jCAaymmOWdU/default.jpg)](https://youtu.be/jCAaymmOWdU)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03ee683a288677a43c0dfad6fb1bb74c11e80ec0
 
 ## 📋 Prerequisites
 
