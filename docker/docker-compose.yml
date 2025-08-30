@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  unitree_mujoco:
+    build:
+      context: .
+      dockerfile: Dockerfile.unitree_mujoco
+    image: unitree_mujoco:latest
+    container_name: unitree_mujoco_sim_dev
+    
+    # GUI support - X11 forwarding  
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ~/.Xauthority:/root/.Xauthority:rw
+      - ../simulate:/root/simulate:rw
+      - ../unitree_robots:/root/unitree_robots:rw
+      - ../src:/root/src:rw
+    
+    network_mode: host
+    
+    # Keep container running
+    stdin_open: true
+    tty: true
+    
+    # Privileged mode for gamepad access
+    privileged: true
+    
+    # Device access for joystick
+    devices:
+      - /dev/input:/dev/input
+    
+    working_dir: /root/
