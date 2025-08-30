@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.unitree_mujoco
     image: unitree_mujoco:latest
-    container_name: unitree_mujoco_sim_dev
+    container_name: unitree_mujoco_sim
     
     # GUI support - X11 forwarding  
     environment:
