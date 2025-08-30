@@ -15,7 +15,7 @@ A comprehensive simulation environment for the Unitree G1 humanoid robot using M
 - **Interactive Control**: Menu-driven interface for motion selection and execution
 
 ## 🎥 Video Demo
-[![Watch the video]([https://youtu.be/jCAaymmOWdU](https://youtu.be/jCAaymmOWdU))
+[![Watch the video](https://img.youtube.com/vi/jCAaymmOWdU/default.jpg)](https://youtu.be/jCAaymmOWdU)
 
 
 ## 📋 Prerequisites
